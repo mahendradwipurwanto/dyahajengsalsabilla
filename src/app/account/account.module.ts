@@ -25,6 +25,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     AccountRoutingModule,
     SigninModule,
+    SignupModule,
     NgbToastModule
   ]
 })
