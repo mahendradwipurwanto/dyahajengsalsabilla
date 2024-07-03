@@ -129,7 +129,7 @@ export class SidebarComponent implements OnInit {
     // Check if the application is running in production
     if (environment.production) {
       // Modify pathName for production build
-      pathName = pathName.replace('/velzon/angular/creative', '');
+      pathName = pathName.replace('/Ngodingin/angular/creative', '');
     }
 
     const active = this.findMenuItem(pathName, this.menuItems)
@@ -143,7 +143,7 @@ export class SidebarComponent implements OnInit {
       let matchingMenuItem = items.find((x: any) => {
         if (environment.production) {
           let path = x.pathname
-          path = path.replace('/velzon/angular/creative', '');
+          path = path.replace('/Ngodingin/angular/creative', '');
           return path === pathName;
         } else {
           return x.pathname === pathName;

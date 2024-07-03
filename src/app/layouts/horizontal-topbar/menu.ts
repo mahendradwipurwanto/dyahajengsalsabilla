@@ -9,7 +9,8 @@ export const MENU: MenuItem[] = [
     {
         id: 2,
         label: 'MENUITEMS.DASHBOARD.TEXT',
-        icon: 'ri-dashboard-2-line'
+        icon: 'ri-dashboard-line',
+        link: '/',
     },
     {
         id: 8,

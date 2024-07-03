@@ -11,14 +11,11 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Component pages
 import { LayoutComponent } from './layout.component';
-import { VerticalComponent } from './vertical/vertical.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HorizontalComponent } from './horizontal/horizontal.component';
 import { HorizontalTopbarComponent } from './horizontal-topbar/horizontal-topbar.component';
-import { TwoColumnComponent } from './two-column/two-column.component';
-import { TwoColumnSidebarComponent } from './two-column-sidebar/two-column-sidebar.component';
 
 // Load Icon
 import { defineElement } from 'lord-icon-element';
@@ -28,14 +25,11 @@ import lottie from 'lottie-web';
 @NgModule({
   declarations: [
     LayoutComponent,
-    VerticalComponent,
     TopbarComponent,
     SidebarComponent,
     FooterComponent,
     HorizontalComponent,
     HorizontalTopbarComponent,
-    TwoColumnComponent,
-    TwoColumnSidebarComponent,
   ],
   imports: [
     CommonModule,
