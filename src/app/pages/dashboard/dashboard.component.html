@@ -1,116 +1,67 @@
-<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)" (window:scroll)="windowScroll()">
     <!-- Begin page -->
     <div class="layout-wrapper landing">
-        <nav class="navbar navbar-expand-lg navbar-landing fixed-top" id="navbar" (window:scroll)="windowScroll()">
-            <div class="container">
-                <a class="navbar-brand" routerLink="/">
-                    <img src="assets/images/logo-dark.png" class="card-logo card-logo-dark" alt="logo dark" height="17">
-                    <img src="assets/images/logo-light.png" class="card-logo card-logo-light" alt="logo light"
-                         height="17">
-                </a>
-                <button class="navbar-toggler py-0 fs-20 text-body" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
-                    <i class="mdi mdi-menu"></i>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
-                        <li class="nav-item">
-                            <a class="nav-link active" [ngClass]="{'active':currentSection === 'hero'}"
-                               [ngxScrollTo]="'#hero'" href="javascript:void(0);">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" [ngClass]="{'active':currentSection === 'services'}"
-                               [ngxScrollTo]="'#services'" href="javascript:void(0);">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" [ngClass]="{'active':currentSection === 'features'}"
-                               [ngxScrollTo]="'#features'" href="javascript:void(0);">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" [ngClass]="{'active':currentSection === 'plans'}"
-                               [ngxScrollTo]="'#plans'" href="javascript:void(0);">Plans</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" [ngClass]="{'active':currentSection === 'reviews'}"
-                               [ngxScrollTo]="'#reviews'" href="javascript:void(0);">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" [ngClass]="{'active':currentSection === 'team'}" [ngxScrollTo]="'#team'"
-                               href="javascript:void(0);">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" [ngClass]="{'active':currentSection === 'contact'}"
-                               [ngxScrollTo]="'#contact'" href="javascript:void(0);">Contact</a>
-                        </li>
-                    </ul>
-
-                    <div class="">
-                        <a routerLink="/signin/basic" class="btn btn-link fw-medium text-decoration-none text-body">Sign
-                            in</a>
-                        <a routerLink="/signup/basic" class="btn btn-primary">Sign Up</a>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-        <!-- end navbar -->
-
         <!-- start hero section -->
         <section class="section pb-0 hero-section" id="hero">
-            <div class="bg-overlay bg-overlay-pattern"></div>
+            <div class="bg-overlay bg-overlay-pattern">
+            </div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-sm-10">
-                        <div class="text-center mt-lg-5 pt-5">
-                            <h1 class="display-6 fw-semibold mb-3 lh-base">The better way to manage your website with
-                                <span
-                                        class="text-success">Velzon </span></h1>
-                            <p class="lead text-muted lh-base">Velzon is a fully responsive, multipurpose and premium
-                                Bootstrap 5 Admin & Dashboard Template built in multiple frameworks.</p>
+                        <div class="text-center mt-lg-5 py-5">
+                            <h1 class="display-6 fw-semibold mb-2 lh-base">
+                                Hi, I'm
+                                <span class="text-primary fw-bold">
+                                Dyah Ajeng Salsabilla
+                            </span>
+                                !
+                            </h1>
+                            <p class="lead text-muted lh-base mb-3">
+                                Welcome to my portfolio! With a passion and experience as quality control, marketing,
+                                and
+                                content
+                                creator, I strive to deliver excellence in every project that i involved in. Let's
+                                connect
+                                and explore how we
+                                can work together to bring your ideas to life.
+                            </p>
+
+                            <hr>
 
                             <div class="d-flex gap-2 justify-content-center mt-4">
-                                <a routerLink="/signup/basic" class="btn btn-primary">Get Started <i
-                                        class="ri-arrow-right-line align-middle ms-1"></i></a>
-                                <a routerLink="/pages/pricing" class="btn btn-danger">View Plans <i
-                                        class="ri-eye-line align-middle ms-1"></i></a>
+                                <a href="https://www.instagram.com/aajengsalsabilla" target="_blank"
+                                   class="btn btn-outline-danger btn-icon waves-effect waves-light material-shadow-none">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@aajengsalsabilla" target="_blank"
+                                   class="btn btn-outline-dark btn-icon waves-effect waves-light material-shadow-none">
+                                    <i class="bx bxl-tiktok"></i>
+                                </a>
+                                <a href="https://x.com/dyahajengsalsa" target="_blank"
+                                   class="btn btn-outline-info btn-icon waves-effect waves-light material-shadow-none">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/dyahajengsalsabilla" target="_blank"
+                                   class="btn btn-outline-primary btn-icon waves-effect waves-light material-shadow-none">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                                <a href="mailto:dyahajengsalsabilla@gmail.com" target="_blank"
+                                   class="btn btn-outline-warning btn-icon waves-effect waves-light material-shadow-none">
+                                    <i class="ri-mail-send-line"></i>
+                                </a>
                             </div>
-                        </div>
 
-                        <div class="mt-4 mt-sm-5 pt-sm-5 mb-sm-n5 demo-carousel">
-                            <div class="demo-img-patten-top d-none d-sm-block">
-                                <img src="assets/images/landing/img-pattern.png" class="d-block img-fluid" alt="...">
-                            </div>
-                            <div class="demo-img-patten-bottom d-none d-sm-block">
-                                <img src="assets/images/landing/img-pattern.png" class="d-block img-fluid" alt="...">
-                            </div>
-                            <div class="">
-                                <ngb-carousel [showNavigationArrows]="showNavigationArrows"
-                                              [showNavigationIndicators]="showNavigationIndicators"
-                                              class="carousel-inner shadow-lg p-2 bg-white rounded">
-                                    <ng-template ngbSlide>
-                                        <img src="assets/images/demos/default.png" class="d-block w-100" alt="...">
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="assets/images/demos/saas.png" class="d-block w-100" alt="...">
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="assets/images/demos/material.png" class="d-block w-100" alt="...">
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="assets/images/demos/minimal.png" class="d-block w-100" alt="...">
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="assets/images/demos/creative.png" class="d-block w-100" alt="...">
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="assets/images/demos/modern.png" class="d-block w-100" alt="...">
-                                    </ng-template>
-                                    <ng-template ngbSlide>
-                                        <img src="assets/images/demos/interactive.png" class="d-block w-100" alt="...">
-                                    </ng-template>
-                                </ngb-carousel>
+                            <div class="d-flex gap-2 justify-content-center my-4">
+                                <a href="https://drive.google.com/file/d/1Mw6F5vkfPYIdNIES4WTLNW-_IIe4yT1H/preview"
+                                   target="_blank" class="btn btn-primary">
+                                    <i class="ri-survey-line align-middle me-1"></i>
+                                    My Resume
+                                </a>
+                                <a href="https://drive.google.com/file/d/1h08b6OnaexD7oMQ8SH2gwPq-Az3GaV5S/preview"
+                                   target="_blank" class="btn btn-success">
+                                    <i class="ri-bank-card-line align-middle me-1"></i>
+                                    Want Hire me? get my rate card
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -137,10 +88,9 @@
         <app-footer></app-footer>
 
         <!--start back-to-top-->
-        <button (click)="topFunction()" class="btn btn-danger btn-icon landing-back-top" id="back-to-top">
+        <button (click)="topFunction()" class="btn btn-primary btn-icon landing-back-top" id="back-to-top">
             <i class="ri-arrow-up-line"></i>
         </button>
         <!--end back-to-top-->
     </div>
-
 </div>

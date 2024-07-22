@@ -26,6 +26,13 @@ import {PortofolioComponent} from "./dashboard/components/portofolio/portofolio.
 import {FaqComponent} from "./dashboard/components/faq/faq.component";
 import {FooterComponent} from "./dashboard/components/footer/footer.component";
 import {ScrollToModule} from "@nicky-lenaers/ngx-scroll-to";
+import {
+    QualityControlComponent
+} from "./dashboard/components/portofolio/experiences/quality-control/quality-control.component";
+import {MarketingComponent} from "./dashboard/components/portofolio/experiences/marketing/marketing.component";
+import {
+    ContentCreatorComponent
+} from "./dashboard/components/portofolio/experiences/content-creator/content-creator.component";
 
 
 @NgModule({
@@ -35,6 +42,9 @@ import {ScrollToModule} from "@nicky-lenaers/ngx-scroll-to";
         PortofolioComponent,
         FaqComponent,
         FooterComponent,
+        QualityControlComponent,
+        MarketingComponent,
+        ContentCreatorComponent,
         LandingScrollspyDirective
     ],
     imports: [
